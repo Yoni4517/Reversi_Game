@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/game.css" rel="stylesheet">
+    <link href="../css/general.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/smallLogo.png">
+    <link href="../icons/css/all.min.css"rel="stylesheet">
+    <title>משחק רברסי</title>
+</head>
+<body>
+    <button type="button" id="homeButton" onclick="location.href = '../html/main.html'" class="button">
+        <i class="fa-sharp fa-solid fa-house" class="icon"> </i>
+    </button>
+    <div id="yourProfile">
+        <i class="fa-solid fa-user" class="icon"> </i>
+        <h1 id="profile"></h1>
+    </div>
+    
+    <main>
+<div id="numOfBlackCoins" class="counterColor">
+    <h1>מספר נקודות:</h1>
+    <h1 id="blackCounter">2</h1>
+</div>
+    <table id="board">
+        <tr id="row0">
+            <th data-col="0" class="col0">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="1" class="col1">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="2" class="col2">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="3" class="col3">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="4" class="col4">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="5" class="col5">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="6" class="col6">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="7" class="col7">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+        </tr>
+        <tr id="row1">
+            <th data-col="0" class="col0">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="1" class="col1">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="2" class="col2">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="3" class="col3">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="4" class="col4">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="5" class="col5">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="6" class="col6">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="7" class="col7">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+        </tr>
+        <tr id="row2">
+            <th data-col="0" class="col0">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="1" class="col1">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="2" class="col2">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="3" class="col3">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="4" class="col4">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="5" class="col5">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="6" class="col6">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="7" class="col7">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+        </tr>
+        <tr id="row3">
+            <th data-col="0" class="col0">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="1" class="col1">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="2" class="col2">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="3" class="col3">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="4" class="col4">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="5" class="col5">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="6" class="col6">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="7" class="col7">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+        </tr>
+        <tr id="row4">
+            <th data-col="0" class="col0">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="1" class="col1">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="2" class="col2">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="3" class="col3">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="4" class="col4">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="5" class="col5">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="6" class="col6">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="7" class="col7">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+        </tr>
+        <tr id="row5">
+            <th data-col="0" class="col0">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="1" class="col1">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="2" class="col2">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="3" class="col3">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="4" class="col4">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="5" class="col5">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="6" class="col6">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="7" class="col7">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+        </tr>
+        <tr id="row6">
+            <th data-col="0" class="col0">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="1" class="col1">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="2" class="col2">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="3" class="col3">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="4" class="col4">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="5" class="col5">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="6" class="col6">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="7" class="col7">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+        </tr>
+        <tr id="row7">
+            <th data-col="0" class="col0">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="1" class="col1">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="2" class="col2">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="3" class="col3">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="4" class="col4">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="5" class="col5">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="6" class="col6">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+            <th data-col="7" class="col7">
+                <div class="blackCoin coin"></div>
+                <div class="whiteCoin coin"></div>
+                <div class="hint coin"></div>
+            </th>
+        </tr>
+    </table>
+    <div id="numOfWhiteCoins" class="counterColor">
+        <h1>מספר נקודות:</h1>
+        <h1 id="whiteCounter">2</h1>
+    </div>
+    </main>
+    <div id="buttons">
+    <button type="button" onclick="location.href = '../html/instructions.html'" class="button"><i class="fa-solid fa-file-circle-check" class="icon"> </i><br>הוראות המשחק</button>
+    <div id="clock">timer</div>
+    <button type="button"  id="newGameButton" class="button"><i class="fa-solid fa-redo" class="icon"> </i><br>משחק חדש</button>
+</div>
+    <script src="../js/game.js"></script>
+</body>
+</html> 
+
+
+

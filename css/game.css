@@ -1,0 +1,167 @@
+body {
+    box-sizing: border-box;
+    margin: auto;
+    background-image: url(../images/wood-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: var(--nav-height);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-left: 2vw;
+}
+
+#turn {
+    text-align: center;
+}
+
+table {
+    margin: 7vh 4vw 0vw;
+    border-collapse: collapse;
+    box-shadow: 0.1rem 0.1rem 0.7rem white;
+}
+
+#board th {
+    width: 4vw;
+    height: 4vw;
+    background-color: rgb(13, 112, 13);
+    border: 0.3vw solid black;
+    margin: 0;
+}
+
+.coin {
+    width: 3.2vw;
+    height: 3.2vw;
+    border-radius: 10vw;
+    margin: auto;
+    display: none;
+}
+
+.blackCoin {
+    background-color: black;
+    box-shadow: 0.1rem 0.1rem 0.7rem white;
+    border: 0.15vw solid rgb(88, 84, 84);
+}
+
+.hint {
+    box-shadow: 0.1rem 0.1rem 0.7rem white;
+}
+
+.whiteCoin {
+    background-color: white;
+    box-shadow: 0.1rem 0.1rem 0.7rem black;
+    border: 0.15vw solid rgb(88, 84, 84);
+}
+
+.counterColor {
+    padding: 2vw;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 20vw;
+    align-self: center;
+    text-align: center;
+}
+.counterColor h1{
+    font-size: 2vw;
+}
+#numOfWhiteCoins {
+    /* margin-left: 5vw; */
+    background-color: #fff;
+    box-shadow: 0 0.1rem 3rem black;
+}
+
+#numOfBlackCoins {
+    /* margin-right: 5vw; */
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 0.1rem 3rem #fff;
+}
+
+.button {
+    width: 20vw;
+    height: 6vw;
+    font-size: 1.5vw;
+    color: rgb(255, 255, 255);
+    margin: 1vw 1vw;
+    padding: auto;
+    border-radius: 0.6vw;
+    background-color: transparent;
+    opacity: 1;
+    box-shadow: 0 0.1rem 3rem rgb(0, 0, 0);
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #043f0e;
+    color: #fff;
+    opacity: 1;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+i {
+    font-size: 2vw;
+}
+
+#homeButton {
+    height: 4vw;
+    margin: 2vw 2vw 0 0;
+    width: 4vw;
+    position: fixed;
+}
+
+#winner,
+#loser,
+#teko {
+    position: fixed;
+    width: 35vw;
+    height: 35vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-self: center;
+}
+
+#winner {
+    background-image: url(../gif/fireworks.gif);
+}
+
+#loser {
+    background-image: url(../gif/loser.gif);
+}
+
+.reactionText {
+    color: rgb(255, 0, 0);
+    text-shadow: 0 0.1rem 0.5rem rgb(255, 251, 251);
+    font-size: 8rem;
+    margin-top: 20vw;
+}
+
+#yourProfile {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    padding: 0.5vw;
+    margin: 2vw 85vw 0 1vw;
+    position: fixed;
+    color: #0a2900;
+    text-shadow: 0 0.1rem 0.5rem rgb(255, 251, 251);
+    
+}
+
+#clock{
+    font-size: 4vw;
+    color: #fff;
+}

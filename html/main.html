@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../images/smallLogo.png">
+    <link href="../css/general.css" rel="stylesheet">
+    <title>YY משחקי מחשב</title>
+</head>
+
+<body>
+    <!-- <button type="button" id="createAccount" class="accountButton"> החלף חשבון</button>
+    <button type="button" id="changeAccount" class="accountButton">צור חשבון </button> -->
+    <button type="button" id="logOutAccount" class="accountButton">יציאה מהחשבון</button>
+
+    <div id="blockGame">
+        <div id="logIn">
+            <div>
+            <h2>התחברות</h2><br><br>
+            <form action="" id="formlogIn">
+                <label for="gmail1">כתובת מייל</label><br>
+                <input id="gmail1" type="email" name="gmail1" placeholder="example@example.co.il"
+                required autocomplete dir="ltr"><br><br>
+                <label for="password1">סיסמה</label><br>
+                <input id="password1" type="password" name="password1" required autocomplete dir="ltr"
+                minlength="8" maxlength="20"><br><br><br>
+                <input type="submit" value="התחבר" class="submitButton"><br><br>
+                <button type="button" id="contactButton"> אין לך עדיין חשבון? צור עכשיו חינם!</button>
+            </form>
+        </div>
+        </div>
+        <div id="signUp">
+            <h2>הרשמה</h2><br><br>
+            <form action="" id="formsignUp">
+                <label for="firstName"> שם פרטי</label><br>
+                <input id="firstName"  type="text" name="firstName" placeholder="ישראל" required
+                    autocomplete minlength="2" maxlength="20"><br><br>
+                <label for="lastName" > שם משפחה</label><br>
+                <input id="lastName" type="text" name="lastName" placeholder="ישראלי" required
+                    autocomplete minlength="2" maxlength="20"><br><br>
+                <label for="gmail2">כתובת מייל</label><br>
+                <input id="gmail2" type="email" name="gmail2" placeholder="example@example.co.il"
+                    required autocomplete dir="ltr"><br><br>
+                <label for="password2">סיסמה</label><br>
+                <input id="password2" type="password" name="password2" required autocomplete dir="ltr"
+                    minlength="8" maxlength="20"><br><br><br>
+                <input type="submit" value="צור חשבון" id="sendContact" class="submitButton"><br><br>
+                <button type="button" id="createAccountButton">יש לך כבר חשבון? התחבר עכשיו!</button>
+            </form>
+        </div>
+    </div>
+    <main>
+        <h1 id="welcome">ברוכים הבאים לעולם המשחקים!</h1><br><br>
+        <div id="allGames">
+            <a href="../html/notValidGame.html">
+                <div class="game" id="game1">
+                    <h2 class="gameName">נחש</h2>
+                    <!-- <img src="../gif/DuVG.gif" alt="race"> -->
+                </div>
+            </a>
+            <a href="../html/notValidGame.html">
+                <div class="game" id="game2">
+                    <h2 class="gameName">טטריס</h2>
+                    <!-- <img src="../gif/l8f.gif" alt="race"> -->
+                </div>
+            </a>
+            <a href="../html/game.html">
+                <div class="game" id="game3">
+                    <h2 class="gameName">רברסי</h2>
+                    <!-- <img src="../gif/OROp.gif" alt="race"> -->
+                </div>
+            </a>
+            <a href="../html/notValidGame.html">
+                <div class="game" id="game4">
+                    <h2 class="gameName">מבוך</h2>
+                    <!-- <img src="../gif/labyrinth-3009_512.gif" alt="race"> -->
+                </div>
+            </a>
+        </div>
+    </main>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

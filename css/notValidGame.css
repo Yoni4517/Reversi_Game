@@ -1,0 +1,17 @@
+body {
+    box-sizing: border-box;
+    background-image: url(../images/builder.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Varela Round', sans-serif;
+}
+
+div {
+    margin: 10vh;
+    padding: 5vw;
+    border-radius: 3vw;
+    text-align: center;
+    background-color: rgba(255, 251, 3, 0.281);
+    font-size: 2rem;
+}

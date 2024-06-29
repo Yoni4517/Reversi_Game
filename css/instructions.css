@@ -1,0 +1,57 @@
+body {
+    box-sizing: border-box;
+    background-image: url(../images/reversi.PNG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Varela Round', sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+div{
+    margin: 10vh;
+    padding: 5vw;
+    border-radius: 3vw;
+    opacity: 0.8;
+    background-color: #000000;
+}
+p{
+    color: #fff;
+    font-size: 1.6rem;
+    text-align:justify;
+}
+h1{
+    color: #fff;
+    font-size: 3rem;
+    text-align:center;
+}
+h2{
+    color: #fff;
+    font-size: 2rem;
+    text-align:center;
+}
+#returnToGameButton{
+    display: block;
+    width: 30vw;
+    height: 4vw;
+    font-size: 1.2vw;
+    color: green;
+    display: flexbox;
+    margin: 2vw auto 0;
+    padding: auto;
+    border-radius: 1vw;
+    background-color: #fff;
+    opacity: 0.7;
+    border-color:green ;
+    box-shadow: 0 0.1rem 1rem green ;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+}
+#returnToGameButton:hover{
+    background-color: #043f0e;
+    color: #fff;
+    opacity: 1;
+}
